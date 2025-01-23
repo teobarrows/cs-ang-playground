@@ -1,0 +1,82 @@
+<div
+        class='card cursor-pointer bg-white group flex  flex-col border-[1px] border-slate-100 p-0 rounded-lg shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.04] overflow-hidden'
+>
+  <div class="w-full bg-slate-50 overflow-hidden relative overflow-hidden">
+    <div
+            class="flex w-full h-[120px] bg-cover bg-no-repeat bg-center group-hover:scale-[1.2] transition-all duration-300 z-400"
+            [style.backgroundImage]="'url(' + campaign?.image + ')'"
+    ></div>
+  </div>
+  <div class="flex flex-row w-full px-4 pt-4 pb-2">
+    <div class="flex">
+      <div
+              class="w-[40px] h-[40px] bg-slate-200 rounded bg-cover"
+              [style.backgroundImage]="'url(https://content.barrows.tech/media_live/MEDIA/DISPLAYTYPEGROUP/TN_KROGER_ENTRANCE_STANDEEE_UNIT_PS.png)'"
+      ></div>
+    </div>
+    <div class="flex flex-col items-start justify-center ml-2 h-[40px]">
+      <div class="text-sm text-left text-slate-600 text-nowrap">
+<!--        {{ campaign?.name.length > 20 ? trimToThreeWords(campaign?.name) : campaign?.name }}-->
+        {{ campaign?.name }}
+      </div>
+      <div class="text-left text-[12px] font-light text-slate-400">Entrance Standee</div>
+    </div>
+  </div>
+
+  <div class="flex items-center px-4 py-1 w-full">
+    <hr class="h-px bg-slate-600 border-0 dark:bg-slate-100 w-full" />
+  </div>
+
+  <div class="flex w-full px-4">
+    <div class="flex flex-col justify-start w-1/2">
+      <div class="text-left text-xs font-medium text-slate-400">Brand</div>
+      <div class="text-left text-[10px] font-medium text-slate-600">Silk</div>
+    </div>
+    <div class="flex flex-col justify-start w-1/2">
+      <div class="text-left text-xs font-medium text-slate-400">Company</div>
+      <div class="text-left text-[10px] font-medium text-slate-600">Coca Cola</div>
+    </div>
+  </div>
+
+  <div class="flex items-center px-4 py-1 w-full">
+    <hr class="h-px bg-slate-600 border-0 dark:bg-slate-100 w-full" />
+  </div>
+
+  <div class="flex w-full px-4">
+    <div class="flex flex-col justify-start w-full">
+      <div class="text-left text-xs font-medium text-slate-400">Flight Dates</div>
+      <div class="text-left text-[10px] font-medium text-slate-600">
+        Oct 1 2024 &mdash; Dec 1, 2024
+      </div>
+    </div>
+  </div>
+
+  <div class="flex items-center px-4 pt-1 pb-1 w-full">
+    <hr class="h-px bg-slate-600 border-0 dark:bg-slate-100 w-full" />
+  </div>
+
+  <div class="flex w-full px-4 pb-2 items-center">
+    <div class="flex flex-col justify-start w-1/2">
+      <div
+              class="flex items-center justify-center rounded-full text-[10px] font-medium py-1 text-white bg-blue-600 mr-2 max-w-[80px]"
+      >
+        In-Flight
+      </div>
+    </div>
+    <div class="flex flex-row justify-end items-end w-1/2">
+      <div
+              class="rounded-full flex items-center flex-col text-xs font-medium py-1 mr-2 cursor-pointer text-slate-300 hover:text-blue-600 transition-all"
+      >
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="download" class="text-sm text-center -mb-[6px]"></mat-icon>
+        <div class="text-[8px] -mt-1">Download</div>
+      </div>
+      <div
+              class="rounded-full text-xs items-center font-medium py-1 cursor-pointer text-slate-300 group-hover:text-blue-600 transition-all"
+      >
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="open_in_browser" class="text-sm text-center -mb-2"></mat-icon>
+
+        <div class="text-[8px] -mt-1">Open</div>
+      </div>
+    </div>
+  </div>
+</div>
